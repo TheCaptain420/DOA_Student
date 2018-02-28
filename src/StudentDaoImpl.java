@@ -16,7 +16,7 @@ public class StudentDaoImpl implements StudentDao {
    @Override
    public void deleteStudent(Student student) {
       students.remove(student.getAargang());
-      System.out.println("Student: Roll No " + student.getAargang() + ", deleted from database");
+      System.out.println("Student: årgang " + student.getAargang() + ", slettet fra databasse");
    }
 
    //retrive list of students from the database
@@ -26,13 +26,13 @@ public class StudentDaoImpl implements StudentDao {
    }
 
    @Override
-   public Student getStudent(int rollNo) {
-      return students.get(rollNo);
+   public Student getStudent(int aargang) {
+      return students.get(aargang);
    }
 
    @Override
    public void updateStudent(Student student) {
       students.get(student.getAargang()).setName(student.getName());
-      System.out.println("Student: Roll No " + student.getAargang() + ", updated in the database");
+      System.out.println("Student: Årgang " + student.getAargang() + ", updateret i databasen.");
    }
 }

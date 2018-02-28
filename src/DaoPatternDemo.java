@@ -4,7 +4,7 @@ public class DaoPatternDemo {
 
       //printer alle studenter
       for (Student student : studentDao.getAllStudents()) {
-         System.out.println("Student: [Årgang : " + student.getAargang() + ", Name : " + student.getName() + " ]");
+         System.out.println("Student: [Årgang : " + student.getAargang() + ", navn : " + student.getName() + " ]");
       }
 
 
@@ -15,6 +15,6 @@ public class DaoPatternDemo {
 
       //getter studenter
       studentDao.getStudent(0);
-      System.out.println("Student: [Årgang : " + student.getAargang() + ", Name : " + student.getName() + " ]");
+      System.out.println("Student: [Årgang : " + student.getAargang() + ", navn : " + student.getName() + " ]");
    }
 }
